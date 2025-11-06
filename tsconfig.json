@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                     // Required for BigInt literals (1_000_000_000n)
+    "lib": ["ES2020", "DOM"],               // Includes BigInt, Promise, etc.
+    "module": "CommonJS",                   // For Node.js / Mocha
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "types": ["mocha", "chai", "node"],     // Mocha + Node types
+    "typeRoots": ["./node_modules/@types"]  // Keep if you have custom types
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
